@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Wars by Molo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/00254378fb.js" crossorigin="anonymous"></script>
+    <script src="index.js" type="module"></script>
+</head>
+<body>
+    <header>
+        <div class="header-text">
+            <h1><img src="people/star_wars-removebg-preview.png" alt="Star Wars" class="logo"></h1>
+        </div>
+        <input type="search" id="search" placeholder="Search characters">
+    </header>
+
+    <main>
+        <section id="character-grid" hidden></section>
+
+        <section id="loading-state" class="state">
+            <div class="spinner"></div>
+            <p>Loading characters...</p>
+        </section>
+
+        <section id="error-state" class="state" hidden>
+            <i class="fa-solid fa-triangle-exclamation"></i>
+            <p>Something went wrong.</p>
+            <p class="error-message"></p>
+            <button id="retry">Try again</button>
+        </section>
+
+        <section id="empty-state" class="state" hidden>
+            <i class="fa-solid fa-user-slash"></i>
+            <p>No characters match that search.</p>
+        </section>
+
+        <nav id="pagination" hidden></nav>
+    </main>
+
+    <footer>
+        <p>Tech 17 Javascript Final Assessment</p>
+        <p>Designed with <i class="fa-solid fa-heart"></i> by <span class="author">Molo</span> for Killamillz</p>
+    </footer>
+</body>
+</html>
