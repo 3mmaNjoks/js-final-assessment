@@ -14,7 +14,7 @@ This project is a final assessment for Tech 17 Javascript. It is a simple web ap
 - Font Awesome
 - SWAPI API
 
-## Key Decisions made
+## Key Decisions Made
 - Use the SWAPI.tech API instead of the SWAPI.dev  to fetch data about characters.  SWAPI.tech is more reliable that SWAPI.dev.
 - Clone a repositor from github called SWAPI-gallery where I extracted the star wars icharacter images displayed alongside the information from the API.
 - The folder does not contain am inage for the 17th charcater so I used a fallback SVG in its place.
